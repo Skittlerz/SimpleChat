@@ -180,6 +180,8 @@ public abstract class AbstractServer implements Runnable
    */
   public void sendToAllClients(Object msg)
   {
+    //basic structure to communicate with any or all clients
+    //similar implementations should go in EchoServer  
     Thread[] clientThreadList = getClientConnections();
 
     for (int i=0; i<clientThreadList.length; i++)

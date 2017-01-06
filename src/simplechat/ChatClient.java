@@ -62,8 +62,10 @@ public class ChatClient extends AbstractClient
    */
   public void handleMessageFromClientUI(String message)
   {
+      
     try
     {
+      //differentiate between local and server commands
       sendToServer(message);
     }
     catch(IOException e)
