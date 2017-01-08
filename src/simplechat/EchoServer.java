@@ -88,6 +88,7 @@ public class EchoServer extends AbstractServer
     catch(Throwable t)
     {
       port = DEFAULT_PORT; //Set port to 5555
+      System.out.print(t);
     }
 	
     EchoServer sv = new EchoServer(port);
